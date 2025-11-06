@@ -104,12 +104,12 @@ public class PathfindingVisualizer2D : MonoBehaviour
     }
 
     // -------------------------------------------------------------------------
-    // 🧠 A* ALGORITHM
+    // A* ALGORITHM
     // -------------------------------------------------------------------------
     IEnumerator RunAStar()
     {
         List<Node2D> openSet = new List<Node2D>();
-        HashSet<Node2D> closedSet = new HashSet<Node2D>();
+        List<Node2D> closedSet = new List<Node2D>();
 
         foreach (var node in grid)
         {
